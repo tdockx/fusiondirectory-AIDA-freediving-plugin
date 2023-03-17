@@ -36,8 +36,8 @@ class aidaFreedivingConfig extends simplePlugin
   static function getAttributesInfo (): array
   {
     return [
-      'mainPopulationCodeConf' => [
-        'name'  => _('Main Population Codes'),
+      'aidaFreedivingConf' => [
+        'name'  => _('Certifications'),
         'attrs' => [
         ]
       ],
