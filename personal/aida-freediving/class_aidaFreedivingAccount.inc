@@ -18,7 +18,7 @@
   You should have received a copy of the GNU General Public License
   along with this program; if not, write to the Free Software
   Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
-*/
+ */
 
 class aidaFreedivingAccount extends simplePlugin
 {
@@ -38,18 +38,18 @@ class aidaFreedivingAccount extends simplePlugin
 
   // The main function : information about attributes
   static function getAttributesInfo (): array
-	{
-		return [
-			'aidaAccountInformation' => [
-				'name'  => _('Student information'),
-				'attrs' => [
-					new StringAttribute(
-						_('Name of the student'), _('Name of the student'),
-						'fdAidaStudent', FALSE
-					),
-				]
-			],
-		];
+  {
+    return [
+      'aidaAccountInformation' => [
+        'name'  => _('Student information'),
+        'attrs' => [
+          new StringAttribute(
+            _('Name of the student'), _('Name of the student'),
+            'fdAidaStudent', FALSE
+          ),
+        ]
+      ],
+    ];
   }
 
   function __construct ($dn = NULL, $object = NULL, $parent = NULL, $mainTab = FALSE)
