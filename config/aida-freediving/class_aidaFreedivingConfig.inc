@@ -1,7 +1,9 @@
 <?php
 /*
   This code is part of FusionDirectory (http://www.fusiondirectory.org/)
-  Copyright (C) 2012-2022 FusionDirectory
+  Copyright (C) 2012-2023 FusionDirectory
+
+  Author : Thibault Paul M Dockx
 
   This program is free software; you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
