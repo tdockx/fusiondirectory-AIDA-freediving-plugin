@@ -24,7 +24,7 @@ requirement:
   phpVersion : 7.4.0
 
 content :
-  filelist :
+  fileList :
   - './contrib/openldap/aida-freediving-fd.schema'
   - './contrib/yaml/description.yaml'
   - './personal/aida-freediving/class_aidaFreedivingAccount.inc'
