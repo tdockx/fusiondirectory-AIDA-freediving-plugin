@@ -22,3 +22,16 @@ NOTE:
 
 The installation guidelines and this plugin was only tested under DEBIAN 11.  
 It should work on any supported distribution of FusionDirectory but the installation paths might differs.
+
+_Changelog.md will be added later on_  
+In format of month/day/year   
+- 10/11/23 - Added All levels of AIDA + UNCERTIFIED. 
+- 10/11/23 - Added Completion form of AIDA 1 and AIDA 2.
+- 10/11/23 - Added Possibility to manage official documents (Liability / Medical).
+- 10/11/23 - Added Possibility to manage schedule. 'Start', 'Next'  and 'End' training / coaching date. 
+- 10/11/23 - Added Possibility to set a status on Exam (if required), and if student is already certified for selected level.
+
+_To be developed_
+- Adaptation to the tasks management to send notification for the start of courses/coaching sessions.
+- Adaptation to include AIDA 3 and AIDA 4 completion form.
+- Integrate the logic of sessions per level, in order to keep track on sessions performed and remaining.

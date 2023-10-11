@@ -31,7 +31,6 @@ class aidaFreedivingAccount extends simplePlugin
       'plDescription' => _('AIDA-Freediving Plugin'),
       'plObjectType' => ['user'],
       'plObjectClass' => ['fdAidaFreediving'],
-
       'plProvidedAcls' => parent::generatePlProvidedAcls(static::getAttributesInfo())
     ];
   }
@@ -48,16 +47,65 @@ class aidaFreedivingAccount extends simplePlugin
             'fdAidaStudentLevel', FALSE, ['UNCERTIFIED', 'AIDA1', 'AIDA2', 'AIDA3', 'AIDA4'], 'UNCERTIFIED'
           ),
           new BooleanAttribute(
+            _('Certified'), _('Student is certified current level'), 'fdAida1StudentCertified', FALSE, FALSE
+          ),
+          new BooleanAttribute(
+            _('Certified'), _('Student is certified current level'), 'fdAida2StudentCertified', FALSE, FALSE
+          ),
+          new BooleanAttribute(
+            _('Certified'), _('Student is certified current level'), 'fdAida3StudentCertified', FALSE, FALSE
+          ),
+          new BooleanAttribute(
+            _('Certified'), _('Student is certified current level'), 'fdAida4StudentCertified', FALSE, FALSE
+          ),
+          new BooleanAttribute(
+            _('Exam'), _('Student for current level is completed'), 'fdAida2StudentExam', FALSE, FALSE
+          ),
+          new BooleanAttribute(
+            _('Exam'), _('Student for current level is completed'), 'fdAida3StudentExam', FALSE, FALSE
+          ),
+          new BooleanAttribute(
+            _('Exam'), _('Student for current level is completed'), 'fdAida4StudentExam', FALSE, FALSE
+          ),
+          new BooleanAttribute(
             _('Medical form'), _('Medical form completed'), 'fdAidaStudentMedicalFormCompleted', FALSE, FALSE
+          ),
+          new FileDownloadAttribute(
+            _('Medical document'), _('Import medical document'),
+            'fdAidaStudentMedicalDocument', FALSE, '', TRUE
           ),
           new BooleanAttribute(
             _('Liability form'), _('Liability form completed'), 'fdAidaStudentLiabilityFormCompleted', FALSE, FALSE
           ),
+          new FileDownloadAttribute(
+            _('Liability release document'), _('Import liability release document'),
+            'fdAidaStudentLiabilityDocument', FALSE, '', TRUE
+          ),
+          // Somehow the format of the DateAttribute does not change the selection. Only Ymd format is displayed.
+          new DateAttribute(
+            _('Start date'), _('Starting date of the course/coaching session'),
+            'fdAidaStudentStartingDate', FALSE,
+            'YmdHis', '',
+            NULL, NULL
+          ),
+          new DateAttribute(
+            _('Next training date'), _('Next training date of the course/coaching session'),
+            'fdAidaStudentNextDate', FALSE,
+            'YmdHis', '',
+            NULL, NULL
+          ),
+          new DateAttribute(
+            _('End date'), _('End date of the course/coaching'),
+            'fdAidaStudentEndDate', FALSE,
+            'YmdHis', '',
+            NULL, NULL
+          ),
         ]
       ],
       'aidaAccountInformationCompletion' => [
-        'name' => _('Student information'),
+        'name' => _('Student Completion Form'),
         'attrs' => [
+          # Attributes related to AIDA 1
           new BooleanAttribute(
             _('Breath Holding'), _('Breath Holding'),
             'fdAida1CompletionBreathHold', FALSE
@@ -66,9 +114,96 @@ class aidaFreedivingAccount extends simplePlugin
             _('Water session'), _('Water session'),
             'fdAida1CompletionWaterSession', FALSE
           ),
+          # Attributes related to AIDA 2 - Confined water
+
+          new BooleanAttribute(
+            _('Swim 200'), _('Swim 200m or 300m with snorkel'),
+            'fdAida2CompletionSwimming', FALSE
+          ),
+          new BooleanAttribute(
+            _('Relaxation'), _('Demonstrate proper relaxation'),
+            'fdAida2CompletionRelaxation', FALSE
+          ),
+          new BooleanAttribute(
+            _('Breathing'), _('Demonstration proper breathing technics'),
+            'fdAida2CompletionBreathing', FALSE
+          ),
+          new BooleanAttribute(
+            _('STA Buddying'), _('STA Buddying'),
+            'fdAida2CompletionSTABuddying', FALSE
+          ),
+          new BooleanAttribute(
+            _('STA Timer'), _('STA Timer min 2:00'),
+            'fdAida2CompletionSTATimer', FALSE
+          ),
+          new BooleanAttribute(
+            _('STA Rescue'), _('STA Rescue - safety exercise'),
+            'fdAida2CompletionSTARescue', FALSE
+          ),
+          new BooleanAttribute(
+            _('DYN Buddying'), _('DYN Buddying'),
+            'fdAida2CompletionDYNBuddying', FALSE
+          ),
+          new BooleanAttribute(
+            _('DYN Finning'), _('DYN Finning technics'),
+            'fdAida2CompletionDYNFinning', FALSE
+          ),
+          new BooleanAttribute(
+            _('DYN Length'), _('DYN performed equal or over 40m'),
+            'fdAida2CompletionDYNLength', FALSE
+          ),
+          new BooleanAttribute(
+            _('DYN Rescue'), _('DYN Rescue exercise'),
+            'fdAida2CompletionDYNRescue', FALSE
+          ),
+          # Attributes related to AIDA 2 - Open water
+          new BooleanAttribute(
+            _('FIM'), _('FIM'),
+            'fdAida2CompletionFIM', FALSE
+          ),
+          new BooleanAttribute(
+            _('Lanyard'), _('Lanyard usage'),
+            'fdAida2CompletionLanyard', FALSE
+          ),
+          new BooleanAttribute(
+            _('Controlled Turn'), _('Controlled turn technic'),
+            'fdAida2CompletionControlledTurn', FALSE
+          ),
+          new BooleanAttribute(
+            _('Equalization'), _('Efficient Frenzel or Valsalva'),
+            'fdAida2CompletionEqualization', FALSE
+          ),
+          new BooleanAttribute(
+            _('Duck Dive'), _('Duck dive'),
+            'fdAida2CompletionDuckDive', FALSE
+          ),
+          new BooleanAttribute(
+            _('CWT Body positioning'), _('Student position in CWT'),
+            'fdAida2CompletionCWTPositioning', FALSE
+          ),
+          new BooleanAttribute(
+            _('CWT Line orientation'), _('Student position related to the line in CWT'),
+            'fdAida2CompletionLineOrientation', FALSE
+          ),
+          new BooleanAttribute(
+            _('CWT Finning'), _('CWT Finning'),
+            'fdAida2CompletionCWTFinning', FALSE
+          ),
+          new BooleanAttribute(
+            _('CWT Buddying'), _('CWT Buddying'),
+            'fdAida2CompletionCWTBuddying', FALSE
+          ),
           new BooleanAttribute(
             _('CWT Depth'), _('Student CWT Depth (max 20m)'),
-            'fdAida2CWTDepth', FALSE
+            'fdAida2CompletionCWTDepth', FALSE
+          ),
+          new BooleanAttribute(
+            _('Surface Rescue'), _('Surface rescue - safety exercise'),
+            'fdAida2CompletionSurfaceRescue', FALSE
+          ),
+          new BooleanAttribute(
+            _('Depth Rescue'), _('Depth rescue between 5 - 10m deep'),
+            'fdAida2CompletionDepthRescue', FALSE
           ),
         ]
       ],
@@ -93,16 +228,25 @@ class aidaFreedivingAccount extends simplePlugin
   {
     // Get the student current level
     $aidaStudentLevel = $this->attributesAccess['fdAidaStudentLevel']->getValue();
+
     //Set all attribute invisible before rendering them visible (Important during the refresh form of student level).
     $this->setAllAttributesInvisible();
 
     switch($aidaStudentLevel) {
       case 'AIDA1' :
-        $this->setAida1AttributesVisible();
+        $this->setRequiredAidaAttributesVisible('Aida1');
         break;
 
       case 'AIDA2' :
-        $this->setAida2AttributesVisible();
+        $this->setRequiredAidaAttributesVisible('Aida2');
+        break;
+
+      case 'AIDA3' :
+        $this->setRequiredAidaAttributesVisible('Aida3');
+        break;
+
+      case 'AIDA4' :
+        $this->setRequiredAidaAttributesVisible('Aida4');
         break;
 
       default :
@@ -121,19 +265,25 @@ class aidaFreedivingAccount extends simplePlugin
     $this->attributesAccess['fdAidaStudentLevel']->setVisible(TRUE);
     $this->attributesAccess['fdAidaStudentMedicalFormCompleted']->setVisible(TRUE);
     $this->attributesAccess['fdAidaStudentLiabilityFormCompleted']->setVisible(TRUE);
+    $this->attributesAccess['fdAidaStudentStartingDate']->setVisible(TRUE);
+    $this->attributesAccess['fdAidaStudentNextDate']->setVisible(TRUE);
+    $this->attributesAccess['fdAidaStudentEndDate']->setVisible(TRUE);
+    $this->attributesAccess['fdAidaStudentMedicalDocument']->setVisible(TRUE);
+    $this->attributesAccess['fdAidaStudentLiabilityDocument']->setVisible(TRUE);
   }
 
-  // Simply set all AIDA 1 completion form attributes visible
-  public function setAida1AttributesVisible () : void
+  // Simply set all required AIDA level attributes visible
+  // The needle can only contain Aida1, Aida2, Aida3, Aida4 - per standard and convention.
+  public function setRequiredAidaAttributesVisible (string $needle) : void
   {
-    $this->attributesAccess['fdAida1CompletionBreathHold']->setVisible(TRUE);
-    $this->attributesAccess['fdAida1CompletionWaterSession']->setVisible(TRUE);
+    foreach ($this->attributesAccess as $aidaObjectsKeys => $aidaObjectsValues) {
+      // Search for the needle 'aida2' within the key array of attribute table
+      if(strpos($aidaObjectsKeys, $needle)) {
+        $aidaObjectsValues->setVisible(TRUE);
+      }
+    }
   }
-  // Simply set all AIDA 2 completion oform attributes visible
-  public function setAida2AttributesVisible () : void
-  {
-    $this->attributesAccess['fdAida2CWTDepth']->setVisible(TRUE);
-  }
+
   protected function shouldSave (): bool
   {
     return parent::shouldSave();

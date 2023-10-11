@@ -3,6 +3,11 @@
 ##
 
 # Attributes
+
+#################################
+# PRIMARY ATTRIBUTES
+#################################
+
 attributetype ( 1.3.6.1.4.1.38414.100.1.1 NAME 'fdAidaStudentLevel'
 		DESC 'AIDA Freediving - current level'
 		EQUALITY caseIgnoreMatch 
@@ -21,30 +26,251 @@ attributetype ( 1.3.6.1.4.1.38414.100.1.3 NAME 'fdAidaStudentLiabilityFormComple
 		SUBSTR caseIgnoreSubstringsMatch
 		SYNTAX '1.3.6.1.4.1.1466.115.121.1.7')
 
-attributetype ( 1.3.6.1.4.1.38414.100.1.4 NAME 'fdAida1CompletionBreathHold'
+attributetype ( 1.3.6.1.4.1.38414.100.1.4 NAME 'fdAida1StudentCertified'
+		DESC 'AIDA Freediving - Liability release'
+		EQUALITY booleanMatch
+		SUBSTR caseIgnoreSubstringsMatch
+		SYNTAX '1.3.6.1.4.1.1466.115.121.1.7')
+
+attributetype ( 1.3.6.1.4.1.38414.100.1.5 NAME 'fdAida2StudentCertified'
+		DESC 'AIDA Freediving - Liability release'
+		EQUALITY booleanMatch
+		SUBSTR caseIgnoreSubstringsMatch
+		SYNTAX '1.3.6.1.4.1.1466.115.121.1.7')
+
+attributetype ( 1.3.6.1.4.1.38414.100.1.6 NAME 'fdAida3StudentCertified'
+		DESC 'AIDA Freediving - Liability release'
+		EQUALITY booleanMatch
+		SUBSTR caseIgnoreSubstringsMatch
+		SYNTAX '1.3.6.1.4.1.1466.115.121.1.7')
+
+attributetype ( 1.3.6.1.4.1.38414.100.1.7 NAME 'fdAida4StudentCertified'
+		DESC 'AIDA Freediving - Liability release'
+		EQUALITY booleanMatch
+		SUBSTR caseIgnoreSubstringsMatch
+		SYNTAX '1.3.6.1.4.1.1466.115.121.1.7')
+
+attributetype ( 1.3.6.1.4.1.38414.100.1.8 NAME 'fdAida2StudentExam'
+		DESC 'AIDA Freediving - Liability release'
+		EQUALITY booleanMatch
+		SUBSTR caseIgnoreSubstringsMatch
+		SYNTAX '1.3.6.1.4.1.1466.115.121.1.7')
+
+attributetype ( 1.3.6.1.4.1.38414.100.1.9 NAME 'fdAida3StudentExam'
+		DESC 'AIDA Freediving - Liability release'
+		EQUALITY booleanMatch
+		SUBSTR caseIgnoreSubstringsMatch
+		SYNTAX '1.3.6.1.4.1.1466.115.121.1.7')
+
+attributetype ( 1.3.6.1.4.1.38414.100.1.10 NAME 'fdAida4StudentExam'
+		DESC 'AIDA Freediving - Liability release'
+		EQUALITY booleanMatch
+		SUBSTR caseIgnoreSubstringsMatch
+		SYNTAX '1.3.6.1.4.1.1466.115.121.1.7')
+
+#################################
+# COURSE COMPLETION FORM - AIDA 1
+#################################
+
+attributetype ( 1.3.6.1.4.1.38414.100.1.11 NAME 'fdAida1CompletionBreathHold'
 		DESC 'AIDA Freediving - AIDA 1 Breathing phase completed'
 		EQUALITY booleanMatch
 		SUBSTR caseIgnoreSubstringsMatch
 		SYNTAX '1.3.6.1.4.1.1466.115.121.1.7')
 
-attributetype ( 1.3.6.1.4.1.38414.100.1.5 NAME 'fdAida1CompletionWaterSession'
+attributetype ( 1.3.6.1.4.1.38414.100.1.12 NAME 'fdAida1CompletionWaterSession'
 		DESC 'AIDA Freediving - AIDA 1 Water session phase completed'
 		EQUALITY booleanMatch
 		SUBSTR caseIgnoreSubstringsMatch
 		SYNTAX '1.3.6.1.4.1.1466.115.121.1.7')
 
+#################################
 # COURSE COMPLETION FORM - AIDA 2
-attributetype ( 1.3.6.1.4.1.38414.100.1.6 NAME 'fdAida2CWTDepth'
+#################################
+
+attributetype ( 1.3.6.1.4.1.38414.100.1.13 NAME 'fdAida2CompletionCWTDepth'
 		DESC 'AIDA Freediving - AIDA 2 - Depth requirement completed'
 		EQUALITY booleanMatch
 		SUBSTR caseIgnoreSubstringsMatch
 		SYNTAX '1.3.6.1.4.1.1466.115.121.1.7')
+
+attributetype ( 1.3.6.1.4.1.38414.100.1.14 NAME 'fdAida2CompletionSwimming'
+		DESC 'AIDA Freediving - AIDA 2 - Swim requirements'
+		EQUALITY booleanMatch
+		SUBSTR caseIgnoreSubstringsMatch
+		SYNTAX '1.3.6.1.4.1.1466.115.121.1.7')
+
+attributetype ( 1.3.6.1.4.1.38414.100.1.15 NAME 'fdAida2CompletionRelaxation'
+		DESC 'AIDA Freediving - AIDA 2 - Requirements'
+		EQUALITY booleanMatch
+		SUBSTR caseIgnoreSubstringsMatch
+		SYNTAX '1.3.6.1.4.1.1466.115.121.1.7')
+
+attributetype ( 1.3.6.1.4.1.38414.100.1.16 NAME 'fdAida2CompletionBreathing'
+		DESC 'AIDA Freediving - AIDA 2 - Requirements'
+		EQUALITY booleanMatch
+		SUBSTR caseIgnoreSubstringsMatch
+		SYNTAX '1.3.6.1.4.1.1466.115.121.1.7')
+
+attributetype ( 1.3.6.1.4.1.38414.100.1.17 NAME 'fdAida2CompletionSTABuddying'
+		DESC 'AIDA Freediving - AIDA 2 - Requirements'
+		EQUALITY booleanMatch
+		SUBSTR caseIgnoreSubstringsMatch
+		SYNTAX '1.3.6.1.4.1.1466.115.121.1.7')
+
+attributetype ( 1.3.6.1.4.1.38414.100.1.18 NAME 'fdAida2CompletionSTATimer'
+		DESC 'AIDA Freediving - AIDA 2 - Requirements'
+		EQUALITY booleanMatch
+		SUBSTR caseIgnoreSubstringsMatch
+		SYNTAX '1.3.6.1.4.1.1466.115.121.1.7')
+
+attributetype ( 1.3.6.1.4.1.38414.100.1.19 NAME 'fdAida2CompletionSTARescue'
+		DESC 'AIDA Freediving - AIDA 2 - Requirements'
+		EQUALITY booleanMatch
+		SUBSTR caseIgnoreSubstringsMatch
+		SYNTAX '1.3.6.1.4.1.1466.115.121.1.7')
+
+attributetype ( 1.3.6.1.4.1.38414.100.1.20 NAME 'fdAida2CompletionDYNBuddying'
+		DESC 'AIDA Freediving - AIDA 2 - Requirements'
+		EQUALITY booleanMatch
+		SUBSTR caseIgnoreSubstringsMatch
+		SYNTAX '1.3.6.1.4.1.1466.115.121.1.7')
+
+attributetype ( 1.3.6.1.4.1.38414.100.1.21 NAME 'fdAida2CompletionDYNFinning'
+		DESC 'AIDA Freediving - AIDA 2 - Requirements'
+		EQUALITY booleanMatch
+		SUBSTR caseIgnoreSubstringsMatch
+		SYNTAX '1.3.6.1.4.1.1466.115.121.1.7')
+
+attributetype ( 1.3.6.1.4.1.38414.100.1.22 NAME 'fdAida2CompletionDYNRescue'
+		DESC 'AIDA Freediving - AIDA 2 - Requirements'
+		EQUALITY booleanMatch
+		SUBSTR caseIgnoreSubstringsMatch
+		SYNTAX '1.3.6.1.4.1.1466.115.121.1.7')
+
+attributetype ( 1.3.6.1.4.1.38414.100.1.23 NAME 'fdAida2CompletionFIM'
+		DESC 'AIDA Freediving - AIDA 2 - Requirements'
+		EQUALITY booleanMatch
+		SUBSTR caseIgnoreSubstringsMatch
+		SYNTAX '1.3.6.1.4.1.1466.115.121.1.7')
+
+attributetype ( 1.3.6.1.4.1.38414.100.1.24 NAME 'fdAida2CompletionLanyard'
+		DESC 'AIDA Freediving - AIDA 2 - Requirements'
+		EQUALITY booleanMatch
+		SUBSTR caseIgnoreSubstringsMatch
+		SYNTAX '1.3.6.1.4.1.1466.115.121.1.7')
+
+attributetype ( 1.3.6.1.4.1.38414.100.1.25 NAME 'fdAida2CompletionControlledTurn'
+		DESC 'AIDA Freediving - AIDA 2 - Requirements'
+		EQUALITY booleanMatch
+		SUBSTR caseIgnoreSubstringsMatch
+		SYNTAX '1.3.6.1.4.1.1466.115.121.1.7')
+
+attributetype ( 1.3.6.1.4.1.38414.100.1.26 NAME 'fdAida2CompletionEqualization'
+		DESC 'AIDA Freediving - AIDA 2 - Requirements'
+		EQUALITY booleanMatch
+		SUBSTR caseIgnoreSubstringsMatch
+		SYNTAX '1.3.6.1.4.1.1466.115.121.1.7')
+
+attributetype ( 1.3.6.1.4.1.38414.100.1.27 NAME 'fdAida2CompletionDuckDive'
+		DESC 'AIDA Freediving - AIDA 2 - Requirements'
+		EQUALITY booleanMatch
+		SUBSTR caseIgnoreSubstringsMatch
+		SYNTAX '1.3.6.1.4.1.1466.115.121.1.7')
+
+attributetype ( 1.3.6.1.4.1.38414.100.1.28 NAME 'fdAida2CompletionCWTPositioning'
+		DESC 'AIDA Freediving - AIDA 2 - Requirements'
+		EQUALITY booleanMatch
+		SUBSTR caseIgnoreSubstringsMatch
+		SYNTAX '1.3.6.1.4.1.1466.115.121.1.7')
+
+attributetype ( 1.3.6.1.4.1.38414.100.1.29 NAME 'fdAida2CompletionLineOrientation'
+		DESC 'AIDA Freediving - AIDA 2 - Requirements'
+		EQUALITY booleanMatch
+		SUBSTR caseIgnoreSubstringsMatch
+		SYNTAX '1.3.6.1.4.1.1466.115.121.1.7')
+
+attributetype ( 1.3.6.1.4.1.38414.100.1.30 NAME 'fdAida2CompletionCWTFinning'
+		DESC 'AIDA Freediving - AIDA 2 - Requirements'
+		EQUALITY booleanMatch
+		SUBSTR caseIgnoreSubstringsMatch
+		SYNTAX '1.3.6.1.4.1.1466.115.121.1.7')
+
+attributetype ( 1.3.6.1.4.1.38414.100.1.31 NAME 'fdAida2CompletionCWTBuddying'
+		DESC 'AIDA Freediving - AIDA 2 - Requirements'
+		EQUALITY booleanMatch
+		SUBSTR caseIgnoreSubstringsMatch
+		SYNTAX '1.3.6.1.4.1.1466.115.121.1.7')
+
+attributetype ( 1.3.6.1.4.1.38414.100.1.32 NAME 'fdAida2CompletionSurfaceRescue'
+		DESC 'AIDA Freediving - AIDA 2 - Requirements'
+		EQUALITY booleanMatch
+		SUBSTR caseIgnoreSubstringsMatch
+		SYNTAX '1.3.6.1.4.1.1466.115.121.1.7')
+
+attributetype ( 1.3.6.1.4.1.38414.100.1.33 NAME 'fdAida2CompletionDepthRescue'
+		DESC 'AIDA Freediving - AIDA 2 - Requirements'
+		EQUALITY booleanMatch
+		SUBSTR caseIgnoreSubstringsMatch
+		SYNTAX '1.3.6.1.4.1.1466.115.121.1.7')
+
+attributetype ( 1.3.6.1.4.1.38414.100.1.34 NAME 'fdAida2CompletionDYNLength'
+		DESC 'AIDA Freediving - AIDA 2 - Requirements'
+		EQUALITY booleanMatch
+		SUBSTR caseIgnoreSubstringsMatch
+		SYNTAX '1.3.6.1.4.1.1466.115.121.1.7')
+
+#################
+# Training agenda
+#################
+
+attributetype ( 1.3.6.1.4.1.38414.100.1.35  NAME 'fdAidaStudentStartingDate'
+	DESC 'Starting date for the student course of coaching session'
+    EQUALITY integerMatch
+    SYNTAX 1.3.6.1.4.1.1466.115.121.1.27
+    SINGLE-VALUE  )
+
+attributetype ( 1.3.6.1.4.1.38414.100.1.36  NAME 'fdAidaStudentNextDate'
+	DESC 'Next starting date for the student course of coaching session'
+    EQUALITY integerMatch
+    SYNTAX 1.3.6.1.4.1.1466.115.121.1.27
+    SINGLE-VALUE  )
+
+attributetype ( 1.3.6.1.4.1.38414.100.1.37  NAME 'fdAidaStudentEndDate'
+	DESC 'Ending date for the student course of coaching session'
+    EQUALITY integerMatch
+    SYNTAX 1.3.6.1.4.1.1466.115.121.1.27
+    SINGLE-VALUE )
+
+###################
+# Files attachments
+###################
+
+attributetype ( 1.3.6.1.4.1.38414.100.1.38 NAME 'fdAidaStudentLiabilityDocument'
+  DESC 'AIDA Student Liability Document'
+  EQUALITY octetStringMatch
+  SUBSTR caseIgnoreSubstringsMatch
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.40)
+
+attributetype ( 1.3.6.1.4.1.38414.100.1.39 NAME 'fdAidaStudentMedicalDocument'
+  DESC 'AIDA Student Medical Document'
+  EQUALITY octetStringMatch
+  SUBSTR caseIgnoreSubstringsMatch
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.40)
 
 # Object Class
 objectclass (1.3.6.1.4.1.38414.100.2.1 NAME 'fdAidaFreediving' SUP top AUXILIARY
 		DESC 'Aida Freediving ObjectClass'
 		MUST ()
 		MAY (fdAidaStudentLevel $ fdAidaStudentMedicalFormCompleted $ fdAidaStudentLiabilityFormCompleted $
-		fdAida1CompletionBreathHold $ fdAida1CompletionWaterSession $ fdAida2CWTDepth
+		fdAida1CompletionBreathHold $ fdAida1CompletionWaterSession $ fdAida1StudentCertified
+		$ fdAida2StudentCertified $ fdAida3StudentCertified $ fdAida4StudentCertified
+		$ fdAida2StudentExam $ fdAida3StudentExam $ fdAida4StudentExam $ fdAidaStudentStartingDate $ fdAidaStudentNextDate $
+		fdAidaStudentEndDate $ fdAidaStudentLiabilityDocument $ fdAidaStudentMedicalDocument $ fdAida2CompletionDepthRescue $
+		fdAida2CompletionSurfaceRescue $ fdAida2CompletionCWTDepth $ fdAida2CompletionCWTBuddying $ fdAida2CompletionCWTFinning $
+		fdAida2CompletionLineOrientation $ fdAida2CompletionCWTPositioning $ fdAida2CompletionDuckDive $ fdAida2CompletionEqualization $
+		fdAida2CompletionControlledTurn $ fdAida2CompletionLanyard $ fdAida2CompletionFIM $ fdAida2CompletionDYNRescue $
+		fdAida2CompletionDYNFinning $ fdAida2CompletionDYNBuddying $ fdAida2CompletionSTARescue $ fdAida2CompletionSTATimer $
+		fdAida2CompletionSTABuddying $ fdAida2CompletionBreathing $ fdAida2CompletionRelaxation $ fdAida2CompletionSwimming $
+		fdAida2CompletionDYNLength
 		))
-
