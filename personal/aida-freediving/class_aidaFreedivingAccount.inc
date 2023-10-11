@@ -27,12 +27,12 @@ class aidaFreedivingAccount extends simplePlugin
   static function plInfo (): array
   {
     return [
-      'plShortName'   => _('AIDA-Freediving'),
+      'plShortName' => _('AIDA-Freediving'),
       'plDescription' => _('AIDA-Freediving Plugin'),
-      'plObjectType'  => ['user'],
+      'plObjectType' => ['user'],
       'plObjectClass' => ['fdAidaFreediving'],
 
-      'plProvidedAcls'  => parent::generatePlProvidedAcls(static::getAttributesInfo())
+      'plProvidedAcls' => parent::generatePlProvidedAcls(static::getAttributesInfo())
     ];
   }
 
@@ -41,11 +41,17 @@ class aidaFreedivingAccount extends simplePlugin
   {
     return [
       'aidaAccountInformation' => [
-        'name'  => _('Student information'),
+        'name' => _('Student information'),
         'attrs' => [
-          new StringAttribute(
-            _('Name of the student'), _('Name of the student'),
-            'fdAidaStudent', FALSE
+          new SelectAttribute(
+            _('Student current level'), _('Student current level'),
+            'fdAidaStudentLevel', FALSE, ['UNCERTIFIED', 'AIDA1', 'AIDA2', 'AIDA3', 'AIDA4'], 'UNCERTIFIED'
+          ),
+          new BooleanAttribute(
+            _('Medical form'), _('Medical form completed'),  'fdAidaStudentMedicalFormCompleted', FALSE, FALSE
+          ),
+          new BooleanAttribute(
+            _('Liability form'), _('Liability form completed'),  'fdAidaStudentLiabilityFormCompleted', FALSE, FALSE
           ),
         ]
       ],
