@@ -20,5 +20,5 @@ Installation
 NOTE:
 ====
 
-The installation guidelines and this plugin was only tested under DEBIAN 11.
+The installation guidelines and this plugin was only tested under DEBIAN 11.  
 It should work on any supported distribution of FusionDirectory but the installation paths might differs.
