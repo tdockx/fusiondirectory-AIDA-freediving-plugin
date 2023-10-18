@@ -3,7 +3,7 @@ information:
   description : AIDA Freediving plugin for FusionDirectory.
   version : "1.4"
   authors :
-    - "FusionDirectory"
+    - "Thibault Dockx"
   status : Stable
   screenshotUrl:
     - "%to_be_defined%"
@@ -13,11 +13,11 @@ information:
   origin: "source"
 
 support:
-  provider: tdockx
-  homeUrl : https://github.com/tdockx/fusiondirectory-AIDA-freediving-plugin
-  ticketUrl : https://github.com/tdockx/fusiondirectory-AIDA-freediving-plugin 
+  provider: "tdockx"
+  homeUrl : "https://github.com/tdockx/fusiondirectory-AIDA-freediving-plugin"
+  ticketUrl : "https://github.com/tdockx/fusiondirectory-AIDA-freediving-plugin"
   schemaUrl: "https://github.com/tdockx/fusiondirectory-AIDA-freediving-plugin"
-  contractUrl: https://www.fusiondirectory.org/abonnements-fusiondirectory/
+  contractUrl: "https://www.fusiondirectory.org/abonnements-fusiondirectory/"
 
 requirement:
   fdVersion : 1.4
@@ -30,5 +30,5 @@ content :
   - './personal/aida-freediving/class_aidaFreedivingAccount.inc'
   - './config/aida-freediving/class_aidaFreedivingConfig.inc'
   - './config/aida-freediving/class_aidaFreedivingConfig.inc'
-  - './html/themes/breezy/icons/16/apps/aida-freediving-16.png'
-  - './html/themes/breezy/icons/48/apps/aida-freediving-48.png'
+  - './html/themes/breezy/icons/16/apps/freediving.png'
+  - './html/themes/breezy/icons/48/apps/freediving.png'
