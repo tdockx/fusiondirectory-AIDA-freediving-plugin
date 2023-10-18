@@ -1,10 +1,9 @@
 information:
-  name : aida-freediving
-  description : AIDA Freediving plugin for FusionDirectory.
-  version : "1.4"
-  authors :
-    - "Thibault Dockx"
-  status : Stable
+  name : "aida-freediving"
+  description : "AIDA Freediving management plugin for FusionDirectory"
+  version : "0.1"
+  authors : ['thibault@pranapnea.com']
+  status : "Development"
   screenshotUrl:
     - "https://github.com/tdockx/fusiondirectory-AIDA-freediving-plugin/blob/main/html/themes/breezy/icons/48/apps/freediving.png?raw=true"
   logoUrl : "https://github.com/tdockx/fusiondirectory-AIDA-freediving-plugin/blob/main/html/themes/breezy/icons/48/apps/freediving.png?raw=true"
@@ -13,11 +12,10 @@ information:
   origin: "source"
 
 support:
-  provider: "tdockx"
+  provider: "community"
   homeUrl : "https://github.com/tdockx/fusiondirectory-AIDA-freediving-plugin"
   ticketUrl : "https://github.com/tdockx/fusiondirectory-AIDA-freediving-plugin"
   schemaUrl: "https://github.com/tdockx/fusiondirectory-AIDA-freediving-plugin"
-  contractUrl: "https://www.fusiondirectory.org/abonnements-fusiondirectory/"
 
 requirement:
   fdVersion : 1.4
