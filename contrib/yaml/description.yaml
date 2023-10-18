@@ -6,8 +6,8 @@ information:
     - "Thibault Dockx"
   status : Stable
   screenshotUrl:
-    - "%to_be_defined%"
-  logoUrl : "%to_be_defined%"
+    - "https://github.com/tdockx/fusiondirectory-AIDA-freediving-plugin/blob/main/html/themes/breezy/icons/48/apps/freediving.png?raw=true"
+  logoUrl : "https://github.com/tdockx/fusiondirectory-AIDA-freediving-plugin/blob/main/html/themes/breezy/icons/48/apps/freediving.png?raw=true"
   tags: ["plugin", "AIDA-freediving"]
   license: "GPLv2"
   origin: "source"
