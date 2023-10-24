@@ -17,6 +17,7 @@ support:
   ticketUrl : "https://github.com/tdockx/fusiondirectory-AIDA-freediving-plugin/issues"
   discussionUrl : "https://github.com/tdockx/fusiondirectory-AIDA-freediving-plugin/wiki"
   schemaUrl: "https://github.com/tdockx/fusiondirectory-AIDA-freediving-plugin"
+  downloadUrl: "https://github.com/tdockx/fusiondirectory-AIDA-freediving-plugin/archive/refs/heads/main.zip"
 
 requirement:
   fdVersion : 1.4
