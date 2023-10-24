@@ -14,7 +14,8 @@ information:
 support:
   provider: "community"
   homeUrl : "https://github.com/tdockx/fusiondirectory-AIDA-freediving-plugin"
-  ticketUrl : "https://github.com/tdockx/fusiondirectory-AIDA-freediving-plugin"
+  ticketUrl : "https://github.com/tdockx/fusiondirectory-AIDA-freediving-plugin/issues"
+  discussionUrl : "https://github.com/tdockx/fusiondirectory-AIDA-freediving-plugin/wiki"
   schemaUrl: "https://github.com/tdockx/fusiondirectory-AIDA-freediving-plugin"
 
 requirement:
