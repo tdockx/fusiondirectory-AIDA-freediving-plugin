@@ -5,8 +5,8 @@ information:
   authors : ['thibault@pranapnea.com']
   status : "Development"
   screenshotUrl:
-    - "https://github.com/tdockx/fusiondirectory-AIDA-freediving-plugin/blob/main/html/themes/breezy/icons/48/apps/freediving.png"
-  logoUrl : "https://github.com/tdockx/fusiondirectory-AIDA-freediving-plugin/blob/main/html/themes/breezy/icons/48/apps/freediving.png"
+    - "https://raw.githubusercontent.com/tdockx/fusiondirectory-AIDA-freediving-plugin/main/html/themes/breezy/icons/48/apps/freediving.png"
+  logoUrl : "https://raw.githubusercontent.com/tdockx/fusiondirectory-AIDA-freediving-plugin/main/html/themes/breezy/icons/48/apps/freediving.png"
   tags : ["information"]
   license: "GPLv2"
   origin: "source"
