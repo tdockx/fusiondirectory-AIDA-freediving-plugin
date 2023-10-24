@@ -7,7 +7,7 @@ information:
   screenshotUrl:
     - "https://github.com/tdockx/fusiondirectory-AIDA-freediving-plugin/blob/main/html/themes/breezy/icons/48/apps/freediving.png?raw=true"
   logoUrl : "https://github.com/tdockx/fusiondirectory-AIDA-freediving-plugin/blob/main/html/themes/breezy/icons/48/apps/freediving.png?raw=true"
-  tags : ["Information"]
+  tags : ["information"]
   license: "GPLv2"
   origin: "source"
 
