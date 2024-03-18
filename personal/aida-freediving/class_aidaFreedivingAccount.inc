@@ -27,10 +27,10 @@ class aidaFreedivingAccount extends simplePlugin
   static function plInfo (): array
   {
     return [
-      'plShortName' => _('AIDA-Freediving'),
-      'plDescription' => _('AIDA-Freediving Plugin'),
-      'plObjectType' => ['user'],
-      'plObjectClass' => ['fdAidaFreediving'],
+      'plShortName'    => _('AIDA-Freediving'),
+      'plDescription'  => _('AIDA-Freediving Plugin'),
+      'plObjectType'   => ['user'],
+      'plObjectClass'  => ['fdAidaFreediving'],
       'plProvidedAcls' => parent::generatePlProvidedAcls(static::getAttributesInfo())
     ];
   }
@@ -40,7 +40,7 @@ class aidaFreedivingAccount extends simplePlugin
   {
     return [
       'aidaAccountInformation' => [
-        'name' => _('Student information'),
+        'name'  => _('Student information'),
         'attrs' => [
           new SelectAttribute(
             _('Student current level'), _('Student current level'),
@@ -82,131 +82,130 @@ class aidaFreedivingAccount extends simplePlugin
             'fdAidaStudentLiabilityDocument', FALSE, '', TRUE
           ),
           // Somehow the format of the DateAttribute does not change the selection. Only Ymd format is displayed.
-          new DateAttribute(
+          new EpochDaysDateAttribute(
             _('Start date'), _('Starting date of the course/coaching session'),
-            'fdAidaStudentStartingDate', FALSE,
-            'YmdHis', '',
-            NULL, NULL
-          ),
-          new DateAttribute(
-            _('Next training date'), _('Next training date of the course/coaching session'),
-            'fdAidaStudentNextDate', FALSE,
-            'YmdHis', '',
-            NULL, NULL
-          ),
-          new DateAttribute(
-            _('End date'), _('End date of the course/coaching'),
-            'fdAidaStudentEndDate', FALSE,
-            'YmdHis', '',
-            NULL, NULL
-          ),
-        ]
-      ],
-      'aidaAccountInformationCompletion' => [
-        'name' => _('Student Completion Form'),
-        'attrs' => [
-          # Attributes related to AIDA 1
-          new BooleanAttribute(
-            _('Breath Holding'), _('Breath Holding'),
-            'fdAida1CompletionBreathHold', FALSE
-          ),
-          new BooleanAttribute(
-            _('Water session'), _('Water session'),
-            'fdAida1CompletionWaterSession', FALSE
-          ),
-          # Attributes related to AIDA 2 - Confined water
+            'fdAidaStudentStartingDate', FALSE, ''
 
-          new BooleanAttribute(
-            _('Swim 200'), _('Swim 200m or 300m with snorkel'),
-            'fdAida2CompletionSwimming', FALSE
           ),
-          new BooleanAttribute(
-            _('Relaxation'), _('Demonstrate proper relaxation'),
-            'fdAida2CompletionRelaxation', FALSE
+          new EpochDaysDateAttribute(
+            _('Next training date'), _('Next training date of the course/coaching session'),
+            'fdAidaStudentNextDate', FALSE, ''
+
           ),
-          new BooleanAttribute(
-            _('Breathing'), _('Demonstration proper breathing technics'),
-            'fdAida2CompletionBreathing', FALSE
-          ),
-          new BooleanAttribute(
-            _('STA Buddying'), _('STA Buddying'),
-            'fdAida2CompletionSTABuddying', FALSE
-          ),
-          new BooleanAttribute(
-            _('STA Timer'), _('STA Timer min 2:00'),
-            'fdAida2CompletionSTATimer', FALSE
-          ),
-          new BooleanAttribute(
-            _('STA Rescue'), _('STA Rescue - safety exercise'),
-            'fdAida2CompletionSTARescue', FALSE
-          ),
-          new BooleanAttribute(
-            _('DYN Buddying'), _('DYN Buddying'),
-            'fdAida2CompletionDYNBuddying', FALSE
-          ),
-          new BooleanAttribute(
-            _('DYN Finning'), _('DYN Finning technics'),
-            'fdAida2CompletionDYNFinning', FALSE
-          ),
-          new BooleanAttribute(
-            _('DYN Length'), _('DYN performed equal or over 40m'),
-            'fdAida2CompletionDYNLength', FALSE
-          ),
-          new BooleanAttribute(
-            _('DYN Rescue'), _('DYN Rescue exercise'),
-            'fdAida2CompletionDYNRescue', FALSE
-          ),
-          # Attributes related to AIDA 2 - Open water
-          new BooleanAttribute(
-            _('FIM'), _('FIM'),
-            'fdAida2CompletionFIM', FALSE
-          ),
-          new BooleanAttribute(
-            _('Lanyard'), _('Lanyard usage'),
-            'fdAida2CompletionLanyard', FALSE
-          ),
-          new BooleanAttribute(
-            _('Controlled Turn'), _('Controlled turn technic'),
-            'fdAida2CompletionControlledTurn', FALSE
-          ),
-          new BooleanAttribute(
-            _('Equalization'), _('Efficient Frenzel or Valsalva'),
-            'fdAida2CompletionEqualization', FALSE
-          ),
-          new BooleanAttribute(
-            _('Duck Dive'), _('Duck dive'),
-            'fdAida2CompletionDuckDive', FALSE
-          ),
-          new BooleanAttribute(
-            _('CWT Body positioning'), _('Student position in CWT'),
-            'fdAida2CompletionCWTPositioning', FALSE
-          ),
-          new BooleanAttribute(
-            _('CWT Line orientation'), _('Student position related to the line in CWT'),
-            'fdAida2CompletionLineOrientation', FALSE
-          ),
-          new BooleanAttribute(
-            _('CWT Finning'), _('CWT Finning'),
-            'fdAida2CompletionCWTFinning', FALSE
-          ),
-          new BooleanAttribute(
-            _('CWT Buddying'), _('CWT Buddying'),
-            'fdAida2CompletionCWTBuddying', FALSE
-          ),
-          new BooleanAttribute(
-            _('CWT Depth'), _('Student CWT Depth (max 20m)'),
-            'fdAida2CompletionCWTDepth', FALSE
-          ),
-          new BooleanAttribute(
-            _('Surface Rescue'), _('Surface rescue - safety exercise'),
-            'fdAida2CompletionSurfaceRescue', FALSE
-          ),
-          new BooleanAttribute(
-            _('Depth Rescue'), _('Depth rescue between 5 - 10m deep'),
-            'fdAida2CompletionDepthRescue', FALSE
+          new EpochDaysDateAttribute(
+            _('End date'), _('End date of the course/coaching'),
+            'fdAidaStudentEndDate', FALSE, ''
+
           ),
         ]
-      ],
+
+      ]
+    ],
+      'aidaAccountInformationCompletion' => [
+    'name'  => _('Student Completion Form'),
+    'attrs' => [
+      # Attributes related to AIDA 1
+      new BooleanAttribute(
+        _('Breath Holding'), _('Breath Holding'),
+        'fdAida1CompletionBreathHold', FALSE
+      ),
+      new BooleanAttribute(
+        _('Water session'), _('Water session'),
+        'fdAida1CompletionWaterSession', FALSE
+      ),
+      # Attributes related to AIDA 2 - Confined water
+
+      new BooleanAttribute(
+        _('Swim 200'), _('Swim 200m or 300m with snorkel'),
+        'fdAida2CompletionSwimming', FALSE
+      ),
+      new BooleanAttribute(
+        _('Relaxation'), _('Demonstrate proper relaxation'),
+        'fdAida2CompletionRelaxation', FALSE
+      ),
+      new BooleanAttribute(
+        _('Breathing'), _('Demonstration proper breathing technics'),
+        'fdAida2CompletionBreathing', FALSE
+      ),
+      new BooleanAttribute(
+        _('STA Buddying'), _('STA Buddying'),
+        'fdAida2CompletionSTABuddying', FALSE
+      ),
+      new BooleanAttribute(
+        _('STA Timer'), _('STA Timer min 2:00'),
+        'fdAida2CompletionSTATimer', FALSE
+      ),
+      new BooleanAttribute(
+        _('STA Rescue'), _('STA Rescue - safety exercise'),
+        'fdAida2CompletionSTARescue', FALSE
+      ),
+      new BooleanAttribute(
+        _('DYN Buddying'), _('DYN Buddying'),
+        'fdAida2CompletionDYNBuddying', FALSE
+      ),
+      new BooleanAttribute(
+        _('DYN Finning'), _('DYN Finning technics'),
+        'fdAida2CompletionDYNFinning', FALSE
+      ),
+      new BooleanAttribute(
+        _('DYN Length'), _('DYN performed equal or over 40m'),
+        'fdAida2CompletionDYNLength', FALSE
+      ),
+      new BooleanAttribute(
+        _('DYN Rescue'), _('DYN Rescue exercise'),
+        'fdAida2CompletionDYNRescue', FALSE
+      ),
+      # Attributes related to AIDA 2 - Open water
+      new BooleanAttribute(
+        _('FIM'), _('FIM'),
+        'fdAida2CompletionFIM', FALSE
+      ),
+      new BooleanAttribute(
+        _('Lanyard'), _('Lanyard usage'),
+        'fdAida2CompletionLanyard', FALSE
+      ),
+      new BooleanAttribute(
+        _('Controlled Turn'), _('Controlled turn technic'),
+        'fdAida2CompletionControlledTurn', FALSE
+      ),
+      new BooleanAttribute(
+        _('Equalization'), _('Efficient Frenzel or Valsalva'),
+        'fdAida2CompletionEqualization', FALSE
+      ),
+      new BooleanAttribute(
+        _('Duck Dive'), _('Duck dive'),
+        'fdAida2CompletionDuckDive', FALSE
+      ),
+      new BooleanAttribute(
+        _('CWT Body positioning'), _('Student position in CWT'),
+        'fdAida2CompletionCWTPositioning', FALSE
+      ),
+      new BooleanAttribute(
+        _('CWT Line orientation'), _('Student position related to the line in CWT'),
+        'fdAida2CompletionLineOrientation', FALSE
+      ),
+      new BooleanAttribute(
+        _('CWT Finning'), _('CWT Finning'),
+        'fdAida2CompletionCWTFinning', FALSE
+      ),
+      new BooleanAttribute(
+        _('CWT Buddying'), _('CWT Buddying'),
+        'fdAida2CompletionCWTBuddying', FALSE
+      ),
+      new BooleanAttribute(
+        _('CWT Depth'), _('Student CWT Depth (max 20m)'),
+        'fdAida2CompletionCWTDepth', FALSE
+      ),
+      new BooleanAttribute(
+        _('Surface Rescue'), _('Surface rescue - safety exercise'),
+        'fdAida2CompletionSurfaceRescue', FALSE
+      ),
+      new BooleanAttribute(
+        _('Depth Rescue'), _('Depth rescue between 5 - 10m deep'),
+        'fdAida2CompletionDepthRescue', FALSE
+      ),
+    ]
+  ],
     ];
   }
 
@@ -224,7 +223,7 @@ class aidaFreedivingAccount extends simplePlugin
   }
 
   // Function allowing to hide or show attributes related to the level of the student
-  public function showProperAttributesForStudentLevel () : void
+  public function showProperAttributesForStudentLevel (): void
   {
     // Get the student current level
     $aidaStudentLevel = $this->attributesAccess['fdAidaStudentLevel']->getValue();
@@ -232,7 +231,7 @@ class aidaFreedivingAccount extends simplePlugin
     //Set all attribute invisible before rendering them visible (Important during the refresh form of student level).
     $this->setAllAttributesInvisible();
 
-    switch($aidaStudentLevel) {
+    switch ($aidaStudentLevel) {
       case 'AIDA1' :
         $this->setRequiredAidaAttributesVisible('Aida1');
         break;
@@ -256,9 +255,9 @@ class aidaFreedivingAccount extends simplePlugin
   }
 
   // Simply set all attributes invisible
-  public function setAllAttributesInvisible () : void
+  public function setAllAttributesInvisible (): void
   {
-    foreach($this->attributesAccess as $attrObject) {
+    foreach ($this->attributesAccess as $attrObject) {
       $attrObject->setVisible(FALSE);
     }
     // Set mandatory attributes visible
@@ -274,11 +273,11 @@ class aidaFreedivingAccount extends simplePlugin
 
   // Simply set all required AIDA level attributes visible
   // The needle can only contain Aida1, Aida2, Aida3, Aida4 - per standard and convention.
-  public function setRequiredAidaAttributesVisible (string $needle) : void
+  public function setRequiredAidaAttributesVisible (string $needle): void
   {
     foreach ($this->attributesAccess as $aidaObjectsKeys => $aidaObjectsValues) {
       // Search for the needle 'aida2' within the key array of attribute table
-      if(strpos($aidaObjectsKeys, $needle)) {
+      if (strpos($aidaObjectsKeys, $needle)) {
         $aidaObjectsValues->setVisible(TRUE);
       }
     }
