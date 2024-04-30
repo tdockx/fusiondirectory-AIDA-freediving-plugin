@@ -39,7 +39,7 @@ class aidaFreedivingAccount extends simplePlugin
   static function getAttributesInfo (): array
   {
     return [
-      'aidaAccountInformation' => [
+      'aidaAccountInformation'           => [
         'name'  => _('Student information'),
         'attrs' => [
           new SelectAttribute(
@@ -99,113 +99,112 @@ class aidaFreedivingAccount extends simplePlugin
           ),
         ]
 
-      ]
-    ],
+      ],
       'aidaAccountInformationCompletion' => [
-    'name'  => _('Student Completion Form'),
-    'attrs' => [
-      # Attributes related to AIDA 1
-      new BooleanAttribute(
-        _('Breath Holding'), _('Breath Holding'),
-        'fdAida1CompletionBreathHold', FALSE
-      ),
-      new BooleanAttribute(
-        _('Water session'), _('Water session'),
-        'fdAida1CompletionWaterSession', FALSE
-      ),
-      # Attributes related to AIDA 2 - Confined water
+        'name'  => _('Student Completion Form'),
+        'attrs' => [
+          # Attributes related to AIDA 1
+          new BooleanAttribute(
+            _('Breath Holding'), _('Breath Holding'),
+            'fdAida1CompletionBreathHold', FALSE
+          ),
+          new BooleanAttribute(
+            _('Water session'), _('Water session'),
+            'fdAida1CompletionWaterSession', FALSE
+          ),
+          # Attributes related to AIDA 2 - Confined water
 
-      new BooleanAttribute(
-        _('Swim 200'), _('Swim 200m or 300m with snorkel'),
-        'fdAida2CompletionSwimming', FALSE
-      ),
-      new BooleanAttribute(
-        _('Relaxation'), _('Demonstrate proper relaxation'),
-        'fdAida2CompletionRelaxation', FALSE
-      ),
-      new BooleanAttribute(
-        _('Breathing'), _('Demonstration proper breathing technics'),
-        'fdAida2CompletionBreathing', FALSE
-      ),
-      new BooleanAttribute(
-        _('STA Buddying'), _('STA Buddying'),
-        'fdAida2CompletionSTABuddying', FALSE
-      ),
-      new BooleanAttribute(
-        _('STA Timer'), _('STA Timer min 2:00'),
-        'fdAida2CompletionSTATimer', FALSE
-      ),
-      new BooleanAttribute(
-        _('STA Rescue'), _('STA Rescue - safety exercise'),
-        'fdAida2CompletionSTARescue', FALSE
-      ),
-      new BooleanAttribute(
-        _('DYN Buddying'), _('DYN Buddying'),
-        'fdAida2CompletionDYNBuddying', FALSE
-      ),
-      new BooleanAttribute(
-        _('DYN Finning'), _('DYN Finning technics'),
-        'fdAida2CompletionDYNFinning', FALSE
-      ),
-      new BooleanAttribute(
-        _('DYN Length'), _('DYN performed equal or over 40m'),
-        'fdAida2CompletionDYNLength', FALSE
-      ),
-      new BooleanAttribute(
-        _('DYN Rescue'), _('DYN Rescue exercise'),
-        'fdAida2CompletionDYNRescue', FALSE
-      ),
-      # Attributes related to AIDA 2 - Open water
-      new BooleanAttribute(
-        _('FIM'), _('FIM'),
-        'fdAida2CompletionFIM', FALSE
-      ),
-      new BooleanAttribute(
-        _('Lanyard'), _('Lanyard usage'),
-        'fdAida2CompletionLanyard', FALSE
-      ),
-      new BooleanAttribute(
-        _('Controlled Turn'), _('Controlled turn technic'),
-        'fdAida2CompletionControlledTurn', FALSE
-      ),
-      new BooleanAttribute(
-        _('Equalization'), _('Efficient Frenzel or Valsalva'),
-        'fdAida2CompletionEqualization', FALSE
-      ),
-      new BooleanAttribute(
-        _('Duck Dive'), _('Duck dive'),
-        'fdAida2CompletionDuckDive', FALSE
-      ),
-      new BooleanAttribute(
-        _('CWT Body positioning'), _('Student position in CWT'),
-        'fdAida2CompletionCWTPositioning', FALSE
-      ),
-      new BooleanAttribute(
-        _('CWT Line orientation'), _('Student position related to the line in CWT'),
-        'fdAida2CompletionLineOrientation', FALSE
-      ),
-      new BooleanAttribute(
-        _('CWT Finning'), _('CWT Finning'),
-        'fdAida2CompletionCWTFinning', FALSE
-      ),
-      new BooleanAttribute(
-        _('CWT Buddying'), _('CWT Buddying'),
-        'fdAida2CompletionCWTBuddying', FALSE
-      ),
-      new BooleanAttribute(
-        _('CWT Depth'), _('Student CWT Depth (max 20m)'),
-        'fdAida2CompletionCWTDepth', FALSE
-      ),
-      new BooleanAttribute(
-        _('Surface Rescue'), _('Surface rescue - safety exercise'),
-        'fdAida2CompletionSurfaceRescue', FALSE
-      ),
-      new BooleanAttribute(
-        _('Depth Rescue'), _('Depth rescue between 5 - 10m deep'),
-        'fdAida2CompletionDepthRescue', FALSE
-      ),
-    ]
-  ],
+          new BooleanAttribute(
+            _('Swim 200'), _('Swim 200m or 300m with snorkel'),
+            'fdAida2CompletionSwimming', FALSE
+          ),
+          new BooleanAttribute(
+            _('Relaxation'), _('Demonstrate proper relaxation'),
+            'fdAida2CompletionRelaxation', FALSE
+          ),
+          new BooleanAttribute(
+            _('Breathing'), _('Demonstration proper breathing technics'),
+            'fdAida2CompletionBreathing', FALSE
+          ),
+          new BooleanAttribute(
+            _('STA Buddying'), _('STA Buddying'),
+            'fdAida2CompletionSTABuddying', FALSE
+          ),
+          new BooleanAttribute(
+            _('STA Timer'), _('STA Timer min 2:00'),
+            'fdAida2CompletionSTATimer', FALSE
+          ),
+          new BooleanAttribute(
+            _('STA Rescue'), _('STA Rescue - safety exercise'),
+            'fdAida2CompletionSTARescue', FALSE
+          ),
+          new BooleanAttribute(
+            _('DYN Buddying'), _('DYN Buddying'),
+            'fdAida2CompletionDYNBuddying', FALSE
+          ),
+          new BooleanAttribute(
+            _('DYN Finning'), _('DYN Finning technics'),
+            'fdAida2CompletionDYNFinning', FALSE
+          ),
+          new BooleanAttribute(
+            _('DYN Length'), _('DYN performed equal or over 40m'),
+            'fdAida2CompletionDYNLength', FALSE
+          ),
+          new BooleanAttribute(
+            _('DYN Rescue'), _('DYN Rescue exercise'),
+            'fdAida2CompletionDYNRescue', FALSE
+          ),
+          # Attributes related to AIDA 2 - Open water
+          new BooleanAttribute(
+            _('FIM'), _('FIM'),
+            'fdAida2CompletionFIM', FALSE
+          ),
+          new BooleanAttribute(
+            _('Lanyard'), _('Lanyard usage'),
+            'fdAida2CompletionLanyard', FALSE
+          ),
+          new BooleanAttribute(
+            _('Controlled Turn'), _('Controlled turn technic'),
+            'fdAida2CompletionControlledTurn', FALSE
+          ),
+          new BooleanAttribute(
+            _('Equalization'), _('Efficient Frenzel or Valsalva'),
+            'fdAida2CompletionEqualization', FALSE
+          ),
+          new BooleanAttribute(
+            _('Duck Dive'), _('Duck dive'),
+            'fdAida2CompletionDuckDive', FALSE
+          ),
+          new BooleanAttribute(
+            _('CWT Body positioning'), _('Student position in CWT'),
+            'fdAida2CompletionCWTPositioning', FALSE
+          ),
+          new BooleanAttribute(
+            _('CWT Line orientation'), _('Student position related to the line in CWT'),
+            'fdAida2CompletionLineOrientation', FALSE
+          ),
+          new BooleanAttribute(
+            _('CWT Finning'), _('CWT Finning'),
+            'fdAida2CompletionCWTFinning', FALSE
+          ),
+          new BooleanAttribute(
+            _('CWT Buddying'), _('CWT Buddying'),
+            'fdAida2CompletionCWTBuddying', FALSE
+          ),
+          new BooleanAttribute(
+            _('CWT Depth'), _('Student CWT Depth (max 20m)'),
+            'fdAida2CompletionCWTDepth', FALSE
+          ),
+          new BooleanAttribute(
+            _('Surface Rescue'), _('Surface rescue - safety exercise'),
+            'fdAida2CompletionSurfaceRescue', FALSE
+          ),
+          new BooleanAttribute(
+            _('Depth Rescue'), _('Depth rescue between 5 - 10m deep'),
+            'fdAida2CompletionDepthRescue', FALSE
+          ),
+        ]
+      ],
     ];
   }
 
