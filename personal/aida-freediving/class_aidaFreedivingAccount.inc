@@ -95,8 +95,11 @@ class aidaFreedivingAccount extends simplePlugin
           new EpochDaysDateAttribute(
             _('End date'), _('End date of the course/coaching'),
             'fdAidaStudentEndDate', FALSE, ''
-
           ),
+          new IntAttribute(
+            _('Yoga Session Card'),
+             _('Number of Yoga session remaining'), fdAidaStudentYogaCard, FALSE, 0, 10
+      ),
         ]
 
       ],
