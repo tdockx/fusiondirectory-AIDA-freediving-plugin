@@ -271,6 +271,7 @@ class aidaFreedivingAccount extends simplePlugin
     $this->attributesAccess['fdAidaStudentEndDate']->setVisible(TRUE);
     $this->attributesAccess['fdAidaStudentMedicalDocument']->setVisible(TRUE);
     $this->attributesAccess['fdAidaStudentLiabilityDocument']->setVisible(TRUE);
+    $this->attributesAccess['fdAidaStudentYogaCard']->setVisible(TRUE);
   }
 
   // Simply set all required AIDA level attributes visible
