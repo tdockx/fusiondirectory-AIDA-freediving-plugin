@@ -100,6 +100,10 @@ class aidaFreedivingAccount extends simplePlugin
             _('Yoga Session Card'),
              _('Number of Yoga session remaining'), 'fdAidaStudentYogaCard', FALSE, 0, 10, 10
       ),
+      new IntAttribute(
+        _('Freediving Pool Session Card'),
+        _('Number of Pool session remaining'), 'fdAidaStudentYogaCard', FALSE, 0, 13, 13
+      ),
         ]
 
       ],
