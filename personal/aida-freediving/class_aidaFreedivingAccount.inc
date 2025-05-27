@@ -99,13 +99,19 @@ class aidaFreedivingAccount extends simplePlugin
           new IntAttribute(
             _('Yoga Session Card'),
              _('Number of Yoga session remaining'), 'fdAidaStudentYogaCard', FALSE, 0, 10, 10
-      ),
-      new IntAttribute(
-        _('Freediving Pool Session Card'),
-        _('Number of Pool session remaining'), 'fdAidaStudentYogaCard', FALSE, 0, 13, 13
-      ),
+          ),
+          new IntAttribute(
+            _('Freediving Pool Session Card'),
+            _('Number of Pool session remaining'), 'fdAidaStudentPoolSubscription', FALSE, 0, 10, 10
+          ), 
+          new IntAttribute(
+            _('Freediving Pool Session Card'),
+            _('Number of Pool session remaining'), 'fdAidaStudentOceanSubscription', FALSE, 0, 10, 10
+          ),
+          new BooleanAttribute(
+            _('Premium Subscription'), _('Premium Subscription'), 'fdAidaStudentPremiumSubscription', FALSE, FALSE
+          ),
         ]
-
       ],
       'aidaAccountInformationCompletion' => [
         'name'  => _('Student Completion Form'),
