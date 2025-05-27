@@ -70,13 +70,6 @@ attributetype ( 1.3.6.1.4.1.38414.100.1.10 NAME 'fdAida4StudentExam'
 		SUBSTR caseIgnoreSubstringsMatch
 		SYNTAX '1.3.6.1.4.1.1466.115.121.1.7')
 
-attributetype ( 1.3.6.1.4.1.38414.100.1.41 NAME 'fdAidaStudentYogaCard'
-		DESC 'AIDA Freediving Yoga Card'
-		EQUALITY integerMatch
-		ORDERING integerOrderingMatch
-  		SYNTAX 1.3.6.1.4.1.1466.115.121.1.27
-		SINGLE-VALUE)
-
 #################################
 # COURSE COMPLETION FORM - AIDA 1
 #################################
@@ -275,7 +268,14 @@ attributetype ( 1.3.6.1.4.1.38414.100.1.40 NAME 'fdAidaStudentPoolSubscription'
   		SYNTAX 1.3.6.1.4.1.1466.115.121.1.27
 		SINGLE-VALUE)
 
-attributetype ( 1.3.6.1.4.1.38414.100.1.41 NAME 'fdAidaStudentOceanSubscription'
+attributetype ( 1.3.6.1.4.1.38414.100.1.41 NAME 'fdAidaStudentYogaCard'
+		DESC 'AIDA Freediving Yoga Card'
+		EQUALITY integerMatch
+		ORDERING integerOrderingMatch
+  		SYNTAX 1.3.6.1.4.1.1466.115.121.1.27
+		SINGLE-VALUE)
+
+attributetype ( 1.3.6.1.4.1.38414.100.1.42 NAME 'fdAidaStudentOceanSubscription'
 		DESC 'AIDA Freediving - Pool - Subscription'
 		EQUALITY integerMatch
 		ORDERING integerOrderingMatch
