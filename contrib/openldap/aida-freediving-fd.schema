@@ -282,6 +282,12 @@ attributetype ( 1.3.6.1.4.1.38414.100.1.42 NAME 'fdAidaStudentOceanSubscription'
   		SYNTAX 1.3.6.1.4.1.1466.115.121.1.27
 		SINGLE-VALUE)
 
+attributetype ( 1.3.6.1.4.1.38414.100.1.43 NAME 'fdAidaStudentPremiumSubscription'
+		DESC 'AIDA Freediving - Premium Subscription'
+		EQUALITY booleanMatch
+		SUBSTR caseIgnoreSubstringsMatch
+		SYNTAX '1.3.6.1.4.1.1466.115.121.1.7')
+
 # Object Class
 objectclass (1.3.6.1.4.1.38414.100.2.1 NAME 'fdAidaFreediving' SUP top AUXILIARY
 		DESC 'Aida Freediving ObjectClass'
@@ -296,5 +302,5 @@ objectclass (1.3.6.1.4.1.38414.100.2.1 NAME 'fdAidaFreediving' SUP top AUXILIARY
 		fdAida2CompletionControlledTurn $ fdAida2CompletionLanyard $ fdAida2CompletionFIM $ fdAida2CompletionDYNRescue $
 		fdAida2CompletionDYNFinning $ fdAida2CompletionDYNBuddying $ fdAida2CompletionSTARescue $ fdAida2CompletionSTATimer $
 		fdAida2CompletionSTABuddying $ fdAida2CompletionBreathing $ fdAida2CompletionRelaxation $ fdAida2CompletionSwimming $
-		fdAida2CompletionDYNLength $ fdAidaStudentPoolSubscription $ fdAidaStudentOceanSubscription
+		fdAida2CompletionDYNLength $ fdAidaStudentPoolSubscription $ fdAidaStudentOceanSubscription $ fdAidaStudentPremiumSubscription
 		))
