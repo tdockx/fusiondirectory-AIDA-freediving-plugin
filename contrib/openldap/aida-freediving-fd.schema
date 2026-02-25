@@ -2,7 +2,7 @@
 ## AIDA Freediving Plugin - Schema for FusionDirectory OpenLDAP.
 ##
 
-## Last ID is 40.
+## Last ID is 43.
 
 # Attributes
 
@@ -86,10 +86,58 @@ attributetype ( 1.3.6.1.4.1.38414.100.1.12 NAME 'fdAida1CompletionWaterSession'
 		SUBSTR caseIgnoreSubstringsMatch
 		SYNTAX '1.3.6.1.4.1.1466.115.121.1.7')
 
+attributetype ( 1.3.6.1.4.1.38414.100.1.44 NAME 'fdAida1TheorySession'
+		DESC 'AIDA Freediving - AIDA 1 Theory Session'
+		EQUALITY booleanMatch
+		SUBSTR caseIgnoreSubstringsMatch
+		SYNTAX '1.3.6.1.4.1.1466.115.121.1.7')
+
 
 #################################
 # COURSE COMPLETION FORM - AIDA 2
 #################################
+
+attributetype ( 1.3.6.1.4.1.38414.100.1.45 NAME 'fdAida2TheorySession1'
+		DESC 'AIDA Freediving - AIDA 2 Theory Session 1'
+		EQUALITY booleanMatch
+		SUBSTR caseIgnoreSubstringsMatch
+		SYNTAX '1.3.6.1.4.1.1466.115.121.1.7')
+
+attributetype ( 1.3.6.1.4.1.38414.100.1.46 NAME 'fdAida2TheorySession2'
+		DESC 'AIDA Freediving - AIDA 2 Theory Session 2'
+		EQUALITY booleanMatch
+		SUBSTR caseIgnoreSubstringsMatch
+		SYNTAX '1.3.6.1.4.1.1466.115.121.1.7')
+
+attributetype ( 1.3.6.1.4.1.38414.100.1.47 NAME 'fdAida2CW1'
+		DESC 'AIDA Freediving - AIDA 2 Theory Session 2'
+		EQUALITY booleanMatch
+		SUBSTR caseIgnoreSubstringsMatch
+		SYNTAX '1.3.6.1.4.1.1466.115.121.1.7')
+
+attributetype ( 1.3.6.1.4.1.38414.100.1.48 NAME 'fdAida2CW2'
+		DESC 'AIDA Freediving - AIDA 2 Theory Session 2'
+		EQUALITY booleanMatch
+		SUBSTR caseIgnoreSubstringsMatch
+		SYNTAX '1.3.6.1.4.1.1466.115.121.1.7')
+
+attributetype ( 1.3.6.1.4.1.38414.100.1.49 NAME 'fdAida2OW1'
+		DESC 'AIDA Freediving - AIDA 2 OW 1'
+		EQUALITY booleanMatch
+		SUBSTR caseIgnoreSubstringsMatch
+		SYNTAX '1.3.6.1.4.1.1466.115.121.1.7')
+
+attributetype ( 1.3.6.1.4.1.38414.100.1.50 NAME 'fdAida2OW2'
+		DESC 'AIDA Freediving - AIDA 2 OW 2'
+		EQUALITY booleanMatch
+		SUBSTR caseIgnoreSubstringsMatch
+		SYNTAX '1.3.6.1.4.1.1466.115.121.1.7')
+
+attributetype ( 1.3.6.1.4.1.38414.100.1.51 NAME 'fdAida2OW3'
+		DESC 'AIDA Freediving - AIDA 2 OW 3'
+		EQUALITY booleanMatch
+		SUBSTR caseIgnoreSubstringsMatch
+		SYNTAX '1.3.6.1.4.1.1466.115.121.1.7')
 
 attributetype ( 1.3.6.1.4.1.38414.100.1.13 NAME 'fdAida2CompletionCWTDepth'
 		DESC 'AIDA Freediving - AIDA 2 - Depth requirement completed'
@@ -219,6 +267,116 @@ attributetype ( 1.3.6.1.4.1.38414.100.1.33 NAME 'fdAida2CompletionDepthRescue'
 
 attributetype ( 1.3.6.1.4.1.38414.100.1.34 NAME 'fdAida2CompletionDYNLength'
 		DESC 'AIDA Freediving - AIDA 2 - Requirements'
+		EQUALITY booleanMatch
+		SUBSTR caseIgnoreSubstringsMatch
+		SYNTAX '1.3.6.1.4.1.1466.115.121.1.7')
+
+#################################
+# COURSE COMPLETION FORM - AIDA 3
+#################################
+
+attributetype ( 1.3.6.1.4.1.38414.100.1.52 NAME 'fdAida3TheorySession1'
+		DESC 'AIDA Freediving - AIDA 3 Theory Session 1'
+		EQUALITY booleanMatch
+		SUBSTR caseIgnoreSubstringsMatch
+		SYNTAX '1.3.6.1.4.1.1466.115.121.1.7')
+
+attributetype ( 1.3.6.1.4.1.38414.100.1.53 NAME 'fdAida3TheorySession2'
+		DESC 'AIDA Freediving - AIDA 3 Theory Session 2'
+		EQUALITY booleanMatch
+		SUBSTR caseIgnoreSubstringsMatch
+		SYNTAX '1.3.6.1.4.1.1466.115.121.1.7')
+
+attributetype ( 1.3.6.1.4.1.38414.100.1.54 NAME 'fdAida3TheorySession3'
+		DESC 'AIDA Freediving - AIDA 3 Theory Session 3'
+		EQUALITY booleanMatch
+		SUBSTR caseIgnoreSubstringsMatch
+		SYNTAX '1.3.6.1.4.1.1466.115.121.1.7')
+
+attributetype ( 1.3.6.1.4.1.38414.100.1.55 NAME 'fdAida3CW1'
+		DESC 'AIDA Freediving - AIDA 3 CW1'
+		EQUALITY booleanMatch
+		SUBSTR caseIgnoreSubstringsMatch
+		SYNTAX '1.3.6.1.4.1.1466.115.121.1.7')
+
+attributetype ( 1.3.6.1.4.1.38414.100.1.56 NAME 'fdAida3CW2'
+		DESC 'AIDA Freediving - AIDA 3 CW2'
+		EQUALITY booleanMatch
+		SUBSTR caseIgnoreSubstringsMatch
+		SYNTAX '1.3.6.1.4.1.1466.115.121.1.7')
+
+attributetype ( 1.3.6.1.4.1.38414.100.1.57 NAME 'fdAida3OW1'
+		DESC 'AIDA Freediving - AIDA 3 OW 1'
+		EQUALITY booleanMatch
+		SUBSTR caseIgnoreSubstringsMatch
+		SYNTAX '1.3.6.1.4.1.1466.115.121.1.7')
+
+attributetype ( 1.3.6.1.4.1.38414.100.1.58 NAME 'fdAida3OW2'
+		DESC 'AIDA Freediving - AIDA 3 OW 2'
+		EQUALITY booleanMatch
+		SUBSTR caseIgnoreSubstringsMatch
+		SYNTAX '1.3.6.1.4.1.1466.115.121.1.7')
+
+attributetype ( 1.3.6.1.4.1.38414.100.1.59 NAME 'fdAida3OW3'
+		DESC 'AIDA Freediving - AIDA 3 OW 3'
+		EQUALITY booleanMatch
+		SUBSTR caseIgnoreSubstringsMatch
+		SYNTAX '1.3.6.1.4.1.1466.115.121.1.7')
+
+#################################
+# COURSE COMPLETION FORM - AIDA 4
+#################################
+
+attributetype ( 1.3.6.1.4.1.38414.100.1.60 NAME 'fdAida4TheorySession1'
+		DESC 'AIDA Freediving - AIDA 4 Theory Session 1'
+		EQUALITY booleanMatch
+		SUBSTR caseIgnoreSubstringsMatch
+		SYNTAX '1.3.6.1.4.1.1466.115.121.1.7')
+
+attributetype ( 1.3.6.1.4.1.38414.100.1.61 NAME 'fdAida4TheorySession2'
+		DESC 'AIDA Freediving - AIDA 4 Theory Session 2'
+		EQUALITY booleanMatch
+		SUBSTR caseIgnoreSubstringsMatch
+		SYNTAX '1.3.6.1.4.1.1466.115.121.1.7')
+
+attributetype ( 1.3.6.1.4.1.38414.100.1.62 NAME 'fdAida4TheorySession3'
+		DESC 'AIDA Freediving - AIDA 4 Theory Session 3'
+		EQUALITY booleanMatch
+		SUBSTR caseIgnoreSubstringsMatch
+		SYNTAX '1.3.6.1.4.1.1466.115.121.1.7')
+
+attributetype ( 1.3.6.1.4.1.38414.100.1.63 NAME 'fdAida4CW1'
+		DESC 'AIDA Freediving - AIDA 4 CW1'
+		EQUALITY booleanMatch
+		SUBSTR caseIgnoreSubstringsMatch
+		SYNTAX '1.3.6.1.4.1.1466.115.121.1.7')
+
+attributetype ( 1.3.6.1.4.1.38414.100.1.64 NAME 'fdAida4CW2'
+		DESC 'AIDA Freediving - AIDA 4 CW2'
+		EQUALITY booleanMatch
+		SUBSTR caseIgnoreSubstringsMatch
+		SYNTAX '1.3.6.1.4.1.1466.115.121.1.7')
+
+attributetype ( 1.3.6.1.4.1.38414.100.1.65 NAME 'fdAida4OW1'
+		DESC 'AIDA Freediving - AIDA 4 OW 1'
+		EQUALITY booleanMatch
+		SUBSTR caseIgnoreSubstringsMatch
+		SYNTAX '1.3.6.1.4.1.1466.115.121.1.7')
+
+attributetype ( 1.3.6.1.4.1.38414.100.1.66 NAME 'fdAida4OW2'
+		DESC 'AIDA Freediving - AIDA 4 OW 2'
+		EQUALITY booleanMatch
+		SUBSTR caseIgnoreSubstringsMatch
+		SYNTAX '1.3.6.1.4.1.1466.115.121.1.7')
+
+attributetype ( 1.3.6.1.4.1.38414.100.1.67 NAME 'fdAida4OW3'
+		DESC 'AIDA Freediving - AIDA 4 OW 3'
+		EQUALITY booleanMatch
+		SUBSTR caseIgnoreSubstringsMatch
+		SYNTAX '1.3.6.1.4.1.1466.115.121.1.7')
+
+attributetype ( 1.3.6.1.4.1.38414.100.1.68 NAME 'fdAida4OW4'
+		DESC 'AIDA Freediving - AIDA 4 OW 4'
 		EQUALITY booleanMatch
 		SUBSTR caseIgnoreSubstringsMatch
 		SYNTAX '1.3.6.1.4.1.1466.115.121.1.7')
