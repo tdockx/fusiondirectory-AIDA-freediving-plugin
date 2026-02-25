@@ -30,4 +30,4 @@ In format of month/day/year
 - 10/11/23 - Added Possibility to manage official documents (Liability / Medical).
 - 10/11/23 - Added Possibility to manage schedule. 'Start', 'Next'  and 'End' training / coaching date. 
 - 10/11/23 - Added Possibility to set a status on Exam (if required), and if student is already certified for selected level.
-- 02/25/26 - Adding simple Confined water 1/2/3 and Open Water 1/2/3/4 for simpler tracking if required
+- 02/25/26 - Adding simple Confined water 1/2 and Open Water 1/2/3/4 for simpler tracking if required. Theory 1/2/3 as well.
