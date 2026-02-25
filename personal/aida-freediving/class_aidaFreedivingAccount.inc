@@ -111,6 +111,9 @@ class aidaFreedivingAccount extends simplePlugin
           new BooleanAttribute(
             _('Premium Subscription'), _('Premium Subscription'), 'fdAidaStudentPremiumSubscription', FALSE, FALSE
           ),
+          new BooleanAttribute(
+            _('Pranapnea Introduction'), _('Pranapnea Introduction completed'), 'fdAidaStudentPranapneaIntroduction', FALSE, FALSE
+          ),
         ]
       ],
       'aidaAccountInformationCompletionAida1' => [
@@ -128,6 +131,10 @@ class aidaFreedivingAccount extends simplePlugin
           new BooleanAttribute(
             _('Water session'), _('Water session'),
             'fdAida1CompletionWaterSession', FALSE
+          ),
+          new BooleanAttribute(
+            _('Course Paid'), _('AIDA 1 Course has been paid'),
+            'fdAida1CoursePaid', FALSE
           ),
         ]
       ],
@@ -256,6 +263,10 @@ class aidaFreedivingAccount extends simplePlugin
             _('Depth Rescue'), _('Depth rescue between 5 - 10m deep'),
             'fdAida2CompletionDepthRescue', FALSE
           ),
+          new BooleanAttribute(
+            _('Course Paid'), _('AIDA 2 Course has been paid'),
+            'fdAida2CoursePaid', FALSE
+          ),
         ]
       ],
       'aidaAccountInformationCompletionAida3' => [
@@ -295,6 +306,10 @@ class aidaFreedivingAccount extends simplePlugin
           new BooleanAttribute(
             _('OW Session 3'), _('AIDA 3 Open Water Session 3'),
             'fdAida3OW3', FALSE
+          ),
+          new BooleanAttribute(
+            _('Course Paid'), _('AIDA 3 Course has been paid'),
+            'fdAida3CoursePaid', FALSE
           ),
         ]
       ],
@@ -339,6 +354,10 @@ class aidaFreedivingAccount extends simplePlugin
           new BooleanAttribute(
             _('OW Session 4'), _('AIDA 4 Open Water Session 4'),
             'fdAida4OW4', FALSE
+          ),
+          new BooleanAttribute(
+            _('Course Paid'), _('AIDA 4 Course has been paid'),
+            'fdAida4CoursePaid', FALSE
           ),
         ]
       ],
@@ -409,6 +428,7 @@ class aidaFreedivingAccount extends simplePlugin
     $this->attributesAccess['fdAidaStudentOceanSubscription']->setVisible(TRUE);
     $this->attributesAccess['fdAidaStudentPoolSubscription']->setVisible(TRUE);
     $this->attributesAccess['fdAidaStudentPremiumSubscription']->setVisible(TRUE);
+    $this->attributesAccess['fdAidaStudentPranapneaIntroduction']->setVisible(TRUE);
   }
 
   // Simply set all required AIDA level attributes visible
