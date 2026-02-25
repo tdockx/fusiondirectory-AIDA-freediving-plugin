@@ -30,8 +30,4 @@ In format of month/day/year
 - 10/11/23 - Added Possibility to manage official documents (Liability / Medical).
 - 10/11/23 - Added Possibility to manage schedule. 'Start', 'Next'  and 'End' training / coaching date. 
 - 10/11/23 - Added Possibility to set a status on Exam (if required), and if student is already certified for selected level.
-
-_To be developed_
-- Adaptation to the tasks management to send notification for the start of courses/coaching sessions.
-- Adaptation to include AIDA 3 and AIDA 4 completion form.
-- Integrate the logic of sessions per level, in order to keep track on sessions performed and remaining.
+- 02/25/26 - Adding simple Confined water 1/2/3 and Open Water 1/2/3/4 for simpler tracking if required
