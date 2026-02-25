@@ -2,7 +2,7 @@
 ## AIDA Freediving Plugin - Schema for FusionDirectory OpenLDAP.
 ##
 
-## Last ID is 43.
+## Last ID is 68.
 
 # Attributes
 
@@ -460,5 +460,12 @@ objectclass (1.3.6.1.4.1.38414.100.2.1 NAME 'fdAidaFreediving' SUP top AUXILIARY
 		fdAida2CompletionControlledTurn $ fdAida2CompletionLanyard $ fdAida2CompletionFIM $ fdAida2CompletionDYNRescue $
 		fdAida2CompletionDYNFinning $ fdAida2CompletionDYNBuddying $ fdAida2CompletionSTARescue $ fdAida2CompletionSTATimer $
 		fdAida2CompletionSTABuddying $ fdAida2CompletionBreathing $ fdAida2CompletionRelaxation $ fdAida2CompletionSwimming $
-		fdAida2CompletionDYNLength $ fdAidaStudentPoolSubscription $ fdAidaStudentOceanSubscription $ fdAidaStudentPremiumSubscription
+		fdAida2CompletionDYNLength $ fdAidaStudentPoolSubscription $ fdAidaStudentOceanSubscription $ fdAidaStudentPremiumSubscription $
+		fdAida1TheorySession $
+		fdAida2TheorySession1 $ fdAida2TheorySession2 $ fdAida2CW1 $ fdAida2CW2 $
+		fdAida2OW1 $ fdAida2OW2 $ fdAida2OW3 $
+		fdAida3TheorySession1 $ fdAida3TheorySession2 $ fdAida3TheorySession3 $
+		fdAida3CW1 $ fdAida3CW2 $ fdAida3OW1 $ fdAida3OW2 $ fdAida3OW3 $
+		fdAida4TheorySession1 $ fdAida4TheorySession2 $ fdAida4TheorySession3 $
+		fdAida4CW1 $ fdAida4CW2 $ fdAida4OW1 $ fdAida4OW2 $ fdAida4OW3 $ fdAida4OW4
 		))

@@ -113,10 +113,14 @@ class aidaFreedivingAccount extends simplePlugin
           ),
         ]
       ],
-      'aidaAccountInformationCompletion' => [
-        'name'  => _('Student Completion Form'),
+      'aidaAccountInformationCompletionAida1' => [
+        'name'  => _('AIDA 1 - Completion Form'),
         'attrs' => [
           # Attributes related to AIDA 1
+          new BooleanAttribute(
+            _('Theory Session'), _('AIDA 1 Theory Session'),
+            'fdAida1TheorySession', FALSE
+          ),
           new BooleanAttribute(
             _('Breath Holding'), _('Breath Holding'),
             'fdAida1CompletionBreathHold', FALSE
@@ -125,7 +129,43 @@ class aidaFreedivingAccount extends simplePlugin
             _('Water session'), _('Water session'),
             'fdAida1CompletionWaterSession', FALSE
           ),
-          # Attributes related to AIDA 2 - Confined water
+        ]
+      ],
+      'aidaAccountInformationCompletionAida2' => [
+        'name'  => _('AIDA 2 - Completion Form'),
+        'attrs' => [
+          # Attributes related to AIDA 2 - Theory Sessions
+          new BooleanAttribute(
+            _('Theory Session 1'), _('AIDA 2 Theory Session 1'),
+            'fdAida2TheorySession1', FALSE
+          ),
+          new BooleanAttribute(
+            _('Theory Session 2'), _('AIDA 2 Theory Session 2'),
+            'fdAida2TheorySession2', FALSE
+          ),
+          # Attributes related to AIDA 2 - Confined Water Sessions
+          new BooleanAttribute(
+            _('CW Session 1'), _('AIDA 2 Confined Water Session 1'),
+            'fdAida2CW1', FALSE
+          ),
+          new BooleanAttribute(
+            _('CW Session 2'), _('AIDA 2 Confined Water Session 2'),
+            'fdAida2CW2', FALSE
+          ),
+          # Attributes related to AIDA 2 - Open Water Sessions
+          new BooleanAttribute(
+            _('OW Session 1'), _('AIDA 2 Open Water Session 1'),
+            'fdAida2OW1', FALSE
+          ),
+          new BooleanAttribute(
+            _('OW Session 2'), _('AIDA 2 Open Water Session 2'),
+            'fdAida2OW2', FALSE
+          ),
+          new BooleanAttribute(
+            _('OW Session 3'), _('AIDA 2 Open Water Session 3'),
+            'fdAida2OW3', FALSE
+          ),
+          # Attributes related to AIDA 2 - Confined water skills
 
           new BooleanAttribute(
             _('Swim 200'), _('Swim 200m or 300m with snorkel'),
@@ -215,6 +255,90 @@ class aidaFreedivingAccount extends simplePlugin
           new BooleanAttribute(
             _('Depth Rescue'), _('Depth rescue between 5 - 10m deep'),
             'fdAida2CompletionDepthRescue', FALSE
+          ),
+        ]
+      ],
+      'aidaAccountInformationCompletionAida3' => [
+        'name'  => _('AIDA 3 - Completion Form'),
+        'attrs' => [
+          # Attributes related to AIDA 3 - Theory Sessions
+          new BooleanAttribute(
+            _('Theory Session 1'), _('AIDA 3 Theory Session 1'),
+            'fdAida3TheorySession1', FALSE
+          ),
+          new BooleanAttribute(
+            _('Theory Session 2'), _('AIDA 3 Theory Session 2'),
+            'fdAida3TheorySession2', FALSE
+          ),
+          new BooleanAttribute(
+            _('Theory Session 3'), _('AIDA 3 Theory Session 3'),
+            'fdAida3TheorySession3', FALSE
+          ),
+          # Attributes related to AIDA 3 - Confined Water Sessions
+          new BooleanAttribute(
+            _('CW Session 1'), _('AIDA 3 Confined Water Session 1'),
+            'fdAida3CW1', FALSE
+          ),
+          new BooleanAttribute(
+            _('CW Session 2'), _('AIDA 3 Confined Water Session 2'),
+            'fdAida3CW2', FALSE
+          ),
+          # Attributes related to AIDA 3 - Open Water Sessions
+          new BooleanAttribute(
+            _('OW Session 1'), _('AIDA 3 Open Water Session 1'),
+            'fdAida3OW1', FALSE
+          ),
+          new BooleanAttribute(
+            _('OW Session 2'), _('AIDA 3 Open Water Session 2'),
+            'fdAida3OW2', FALSE
+          ),
+          new BooleanAttribute(
+            _('OW Session 3'), _('AIDA 3 Open Water Session 3'),
+            'fdAida3OW3', FALSE
+          ),
+        ]
+      ],
+      'aidaAccountInformationCompletionAida4' => [
+        'name'  => _('AIDA 4 - Completion Form'),
+        'attrs' => [
+          # Attributes related to AIDA 4 - Theory Sessions
+          new BooleanAttribute(
+            _('Theory Session 1'), _('AIDA 4 Theory Session 1'),
+            'fdAida4TheorySession1', FALSE
+          ),
+          new BooleanAttribute(
+            _('Theory Session 2'), _('AIDA 4 Theory Session 2'),
+            'fdAida4TheorySession2', FALSE
+          ),
+          new BooleanAttribute(
+            _('Theory Session 3'), _('AIDA 4 Theory Session 3'),
+            'fdAida4TheorySession3', FALSE
+          ),
+          # Attributes related to AIDA 4 - Confined Water Sessions
+          new BooleanAttribute(
+            _('CW Session 1'), _('AIDA 4 Confined Water Session 1'),
+            'fdAida4CW1', FALSE
+          ),
+          new BooleanAttribute(
+            _('CW Session 2'), _('AIDA 4 Confined Water Session 2'),
+            'fdAida4CW2', FALSE
+          ),
+          # Attributes related to AIDA 4 - Open Water Sessions
+          new BooleanAttribute(
+            _('OW Session 1'), _('AIDA 4 Open Water Session 1'),
+            'fdAida4OW1', FALSE
+          ),
+          new BooleanAttribute(
+            _('OW Session 2'), _('AIDA 4 Open Water Session 2'),
+            'fdAida4OW2', FALSE
+          ),
+          new BooleanAttribute(
+            _('OW Session 3'), _('AIDA 4 Open Water Session 3'),
+            'fdAida4OW3', FALSE
+          ),
+          new BooleanAttribute(
+            _('OW Session 4'), _('AIDA 4 Open Water Session 4'),
+            'fdAida4OW4', FALSE
           ),
         ]
       ],
