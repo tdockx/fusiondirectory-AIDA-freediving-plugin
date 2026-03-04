@@ -102,11 +102,11 @@ class aidaFreedivingAccount extends simplePlugin
           ),
           new IntAttribute(
             _('Freediving Pool Session Card'),
-            _('Number of Pool session remaining'), 'fdAidaStudentPoolSubscription', FALSE, 0, 10, 0
+            _('Number of Pool session remaining'), 'fdAidaStudentPoolSubscription', FALSE, 0, 20, 0
           ), 
           new IntAttribute(
             _('Freediving Oean Session Card'),
-            _('Number of Ocean session remaining'), 'fdAidaStudentOceanSubscription', FALSE, 0, 10, 0
+            _('Number of Ocean session remaining'), 'fdAidaStudentOceanSubscription', FALSE, 0, 20, 0
           ),
           new BooleanAttribute(
             _('Premium Subscription'), _('Premium Subscription'), 'fdAidaStudentPremiumSubscription', FALSE, FALSE
